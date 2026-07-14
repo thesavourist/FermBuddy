@@ -1,24 +1,38 @@
 # FermBuddy
-FermBuddy connects to fermentation monitoring devices and displays their data directly on a dedicated screen.
+**Track more than Gravity**
 
 FermBuddy is an open-source project.
-The source code is licensed under the GNU General Public License.
-The name "FermBuddy", the logo and other branding elements are not covered by this license and may not be used without permission.
+It connects directly to your fermentation monitoring devices and displays gravity, temperature, attenuation and estimated ABV on a dedicated display.
 
-⚠️ FermBuddy is under active development.
-Features and hardware may change before the first stable release.
+## License
 
-Requirements
+The source code is licensed under the GNU General Public License (GPL).
+
+The name **FermBuddy**, its logo and other branding elements are not covered by this license and may not be used without permission.
+
+## Project Status
+
+> ⚠️ FermBuddy is currently under active development.
+> Features, hardware and documentation may change before the first stable release.
+
+## Hardware
+
+- LilyGO T-Display S3
+  https://lilygo.cc/products/t-display-s3
+
+## Software Requirements
 
 - Arduino IDE 2.x
-- ESP32 Core 3.x
+- ESP32 Arduino Core 3.x or newer
+
+## Required Libraries
+
 - LittleFS
 - TFT_eSPI
 - ArduinoJson
 - NimBLE-Arduino
-- WiFi
 - ESPAsyncWebServer
 - DNSServer
 - PNGdec
 
-(see includes in .ino file for more details)
+See the `#include` statements in `FermBuddy.ino` for the complete list of dependencies.
