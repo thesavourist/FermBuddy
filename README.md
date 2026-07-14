@@ -1,8 +1,10 @@
 # FermBuddy
 **Track more than Gravity**
 
-FermBuddy is an open-source display for Hydrometers. (Support for Tilt Hydrometers only at the moment)
-It connects directly to your fermentation monitoring devices and displays gravity, temperature, attenuation and estimated ABV on a dedicated display.
+FermBuddy is an open-source display for hydrometers.
+Currently, only Tilt hydrometers are supported.
+
+It connects directly to fermentation monitoring devices and displays gravity, temperature, estimated attenuation and estimated ABV on a dedicated display.
 
 ## License
 
