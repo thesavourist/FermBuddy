@@ -7,3 +7,18 @@ The name "FermBuddy", the logo and other branding elements are not covered by th
 
 ⚠️ FermBuddy is under active development.
 Features and hardware may change before the first stable release.
+
+Requirements
+
+- Arduino IDE 2.x
+- ESP32 Core 3.x
+- LittleFS
+- TFT_eSPI
+- ArduinoJson
+- NimBLE-Arduino
+- WiFi
+- ESPAsyncWebServer
+- DNSServer
+- PNGdec
+
+(see includes in .ino file for more details)

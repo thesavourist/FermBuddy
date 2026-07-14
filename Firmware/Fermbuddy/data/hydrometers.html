@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FermBuddy &gt; Hydrometer-Setup</title>
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/fermbuddy.css" rel="stylesheet">
+</head>
+<body>
+ <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="home" viewBox="0 0 16 16">
+ <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16">
+         <path d="M5.09,9.37c-.01.17.12.33.29.34.17.01.33-.12.34-.29.01-.17-.12-.33-.29-.34-.17-.01-.33.12-.34.29Z"/>
+         <path d="M5.8,8.44c0-.09-.06-.17-.15-.18-.09,0-.17.06-.18.15,0,.09.06.17.15.18.09,0,.17-.06.18-.15Z"/>
+         <path d="M6.17,10.25c0,.12.08.23.21.24.12,0,.23-.08.24-.21,0-.12-.08-.23-.21-.24-.12,0-.23.08-.24.21Z"/>
+         <path d="M5.62,11.12c.12,0,.22-.08.23-.2,0-.12-.08-.22-.2-.23-.12,0-.22.08-.23.2,0,.12.08.22.2.23Z"/>
+         <path d="M6.85,12.2c0,.12.08.23.2.24.12,0,.23-.08.24-.2,0-.12-.08-.23-.2-.24-.12,0-.23.08-.24.2Z"/>
+         <path d="M5.91,12.02c.11,0,.21-.08.22-.19s-.08-.21-.19-.22c-.11,0-.21.08-.22.19,0,.11.08.21.19.22Z"/>
+         <path d="M8.24,10.31c0,.11.08.21.19.22.11,0,.21-.08.22-.19,0-.11-.08-.21-.19-.22-.11,0-.21.08-.22.19Z"/>
+         <path d="M7.85,13.16c-.01.09.05.18.15.19.09.01.18-.05.19-.15.01-.09-.05-.18-.15-.19-.09-.01-.18.05-.19.15Z"/>
+         <path d="M8.05,11.24c-.12-.02-.23.07-.25.19-.02.12.07.23.19.25.12.02.23-.07.25-.19.02-.12-.07-.23-.19-.25Z"/>
+         <path d="M10.67,8.34c.09.01.18-.06.19-.15.01-.09-.06-.18-.15-.19-.09,0-.18.06-.19.15,0,.09.06.18.15.19Z"/>
+         <path d="M11.06,10.12c.01-.13-.08-.24-.21-.25-.13-.01-.24.08-.25.21-.01.13.08.24.21.25.13.01.24-.08.25-.21Z"/>
+         <path d="M9.81,10.7c-.01.12.08.23.2.24.12.01.23-.08.24-.2s-.08-.23-.2-.24c-.12-.01-.23.08-.25.2Z"/>
+         <path d="M9.24,12.54c.12.01.23-.08.24-.2.01-.12-.08-.23-.2-.24-.12-.01-.23.08-.25.2-.01.12.08.23.2.24Z"/>
+         <path d="M10.63,11.8c.11.01.21-.07.23-.18.01-.11-.07-.21-.18-.23-.11-.01-.21.07-.23.18-.01.11.07.21.18.23Z"/>
+         <path d="M13.69,3.75l-1.02,1.02v6.82s0,.08,0,.08c0,.68-.37,1.28-.97,1.59l-2.9,1.48c-.51.26-1.11.26-1.62,0l-2.9-1.48c-.6-.31-.97-.92-.97-1.59v-6.98s-1.02-1.02-1.02-1.02v7.9s0,.02,0,.02c0,.04,0,.08,0,.11v.03s0,.05,0,.05c.04,1,.63,1.91,1.52,2.37l2.9,1.48c.78.4,1.76.4,2.55,0l2.9-1.48c.94-.48,1.52-1.43,1.52-2.49,0-.04,0-.07,0-.1V3.75Z"/>
+         <path d="M8.02,7.27c-.31,0-.56.25-.56.56s.25.56.56.56.56-.25.56-.56-.25-.56-.56-.56Z"/>
+         <path d="M9.39,7.84c0-.76-.62-1.38-1.38-1.38s-1.38.62-1.38,1.38.62,1.38,1.38,1.38,1.38-.62,1.38-1.38ZM8.02,8.73c-.49,0-.89-.4-.89-.89s.4-.89.89-.89.89.4.89.89-.4.89-.89.89Z"/>
+         <path d="M8.53,3.38c.2.02.4.06.59.11l.63-.9c-.39-.13-.8-.21-1.22-.25v1.05Z"/>
+         <path d="M4.15,3.84l.74.74c.31-.3.67-.53,1.04-.73l-.6-.86c-.42.23-.82.5-1.18.85Z"/>
+         <path d="M7.5,2.33c-.42.04-.83.12-1.23.25l.63.9c.19-.05.39-.08.6-.1v-1.05Z"/>
+         <path d="M11.12,4.59l.74-.74c-.35-.34-.74-.6-1.16-.84l-.6.86c.36.19.71.42,1.02.71Z"/>
+         <path d="M7.64,4.52l.38.54.38-.54c-.25-.03-.51-.03-.76,0Z"/>
+         <path d="M9.56,6.14l.74-.74c-.26-.25-.56-.43-.87-.58l-.61.87c.27.1.52.26.73.46Z"/>
+         <path d="M5.7,5.4l.74.74c.22-.21.48-.36.76-.46l-.61-.87c-.32.15-.62.34-.89.59Z"/>
+         <path d="M12.53,2.81l.2.17.78-.78c-.31-.27-.65-.55-.89-.72-.19-.14-.4-.24-.6-.36l-.62.89c.4.22.78.48,1.14.79Z"/>
+         <path d="M7.5,1.15V.06c-.88.05-1.75.25-2.57.6l.64.91c.63-.24,1.28-.37,1.93-.42Z"/>
+         <path d="M3.37,1.49c-.26.18-.59.48-.85.72l.75.76.42-.36h0c.3-.23.61-.43.93-.61l-.62-.89c-.21.12-.43.23-.63.37Z"/>
+         <path d="M10.46,1.57l.63-.91c-.82-.34-1.69-.54-2.57-.6v1.09c.66.05,1.31.18,1.93.41Z"/>
+       </svg>
+       </symbol>
+  <symbol id="wifi" viewBox="0 0 16 16">
+   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+     <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+     <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+   </svg>
+  </symbol>
+  <symbol id="gear-fill" viewBox="0 0 16 16">
+    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+  </symbol>
+  <symbol id="card-list" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+        <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+      </svg>
+  </symbol>
+  <symbol id="reset" viewbox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-reboot" viewBox="0 0 16 16">
+      <path d="M1.161 8a6.84 6.84 0 1 0 6.842-6.84.58.58 0 1 1 0-1.16 8 8 0 1 1-6.556 3.412l-.663-.577a.58.58 0 0 1 .227-.997l2.52-.69a.58.58 0 0 1 .728.633l-.332 2.592a.58.58 0 0 1-.956.364l-.643-.56A6.8 6.8 0 0 0 1.16 8z"/>
+      <path d="M6.641 11.671V8.843h1.57l1.498 2.828h1.314L9.377 8.665c.897-.3 1.427-1.106 1.427-2.1 0-1.37-.943-2.246-2.456-2.246H5.5v7.352zm0-3.75V5.277h1.57c.881 0 1.416.499 1.416 1.32 0 .84-.504 1.324-1.386 1.324z"/>
+    </svg>
+  </symbol>
+  
+</svg>
+
+<main>    
+  <div class="d-flex flex-column flex-shrink-0 bg-light shaderight" style="width: 4.5rem;">
+  <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+    <li class="nav-item">
+      <a href="/" class="nav-link py-3 border-bottom" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
+        <svg class="bi" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#home"/></svg>
+      </a>
+    </li>
+    <li>
+        <a href="/connection" class="nav-link py-3 border-bottom" title="Connection" data-bs-toggle="tooltip" data-bs-placement="right">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Connection"><use xlink:href="#wifi"/></svg>
+        </a>
+      </li>
+    <li>
+      <a href="/settings" class="nav-link py-3 border-bottom" title="Settings" data-bs-toggle="tooltip" data-bs-placement="right">
+        <svg class="bi" width="24" height="24" role="img" aria-label="Settings"><use xlink:href="#gear-fill"/></svg>
+      </a>
+    </li>
+    <li>
+      <a href="/hydrometers" class="nav-link active py-3 border-bottom" title="Hydrometers" data-bs-toggle="tooltip" data-bs-placement="right">
+        <svg class="bi" width="24" height="24" role="img" aria-label="Tiltlist"><use xlink:href="#card-list"/></svg>
+      </a>
+    </li> 
+    <li>
+    <a href="#" class="nav-link py-3 border-bottom" title="Reboot" data-bs-toggle="tooltip" data-bs-placement="right" id="doreboot">
+        <svg class="bi" width="24" height="24" role="img" aria-label="Resets"><use xlink:href="#reset"/></svg>
+      </a>
+    </li>  
+  </ul>
+</div>
+  <div class="content">
+    <div class="page-header">
+      <h1>Hydrometer Setup</h1>
+      <div class="brand-info">
+          FermBuddy currently works with Tilt™ Hydrometers only.
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form id="tiltSetupForm">
+          
+              <!-- Data Source -->
+          
+              <div class="mb-4">
+          
+                  <label for="tiltcol" class="form-label">
+                      Tilt Color
+                  </label>
+                      <select class="form-select form-control" aria-label="Tilts" id="tiltColor">
+                        <option value="0" selected>--- Select tilt color ---</option>
+                        <option calue="RED">RED</option>
+                        <option value="GREEN">GREEN</option>
+                        <option value="BLACK">BLACK</option>
+                        <option value="PURPLE">PURPLE</option>
+                        <option value="ORANGE">ORANGE</option>
+                        <option value="BLUE">BLUE</option>
+                        <option value="YELLOW">YELLOW</option>
+                        <option value="PINK">PINK</option>
+                      </select>
+              </div>
+              <div class="mb-3" id="showdetails" style="display:none;">
+                <label for="beername" class="form-label">
+                    Beername
+                </label>
+                <input type="text" name="beername" value="" id="beername" class="form-control mb-3">
+                <label for="beername" class="form-label">
+                    Hydrometer OG
+                </label>
+                <input type="text" name="tiltog" value="" id="tiltog" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="ogstart" class="form-label">
+                    calibrated OG
+                </label>
+                <input type="text" name="ogstart" value="" id="ogstart" class="form-control">
+              </div>
+              <div class="mb-4">
+              
+                  <label class="form-label">
+                      Unit:
+                  </label><br/>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="unit" id="unitSG" value="sg" checked>
+                    <label class="form-check-label" for="unitSG">SG</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="unit" id="unitPlato" value="plato">
+                    <label class="form-check-label" for="unitPlato">Plato</label>
+                  </div>
+      
+              </div>
+             
+              <button
+                  type="submit"
+                  class="btn btn-primary" id="savetilt">
+          
+                  Save Hydrometer Data
+          
+              </button>
+          
+          </form>
+          <br/>
+          <div
+              id="success"
+              class="alert alert-success d-none mt-3"
+              role="alert">
+          
+              Settings saved successfully.
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="/js/hydrometers.js"></script>
+
+</body>
+</html>
