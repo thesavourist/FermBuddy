@@ -40,3 +40,11 @@ The name **FermBuddy**, its logo and other branding elements are not covered by 
 - PNGdec
 
 See the `#include` statements in `FermBuddy.ino` for the complete list of dependencies.
+
+## Install and Run
+
+After installing the Firmware and data (LittleFS) Fermbuddy boots into AP Mode
+
+Ap-Name: Fermbuddy Setup
+Password: fermbuddy
+WebConfig IP for initial Setup: 192.168.4.1
