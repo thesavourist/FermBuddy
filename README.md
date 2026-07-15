@@ -45,6 +45,6 @@ See the `#include` statements in `FermBuddy.ino` for the complete list of depend
 
 After installing the Firmware and data (LittleFS) Fermbuddy boots into AP Mode
 
-Ap-Name: Fermbuddy Setup
-Password: fermbuddy
-WebConfig IP for initial Setup: 192.168.4.1
+- Ap-Name: Fermbuddy Setup
+- Password: fermbuddy
+- WebConfig IP for initial Setup: 192.168.4.1
