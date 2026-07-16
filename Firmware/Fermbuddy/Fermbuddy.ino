@@ -27,6 +27,7 @@ DNSServer dnsServer;
 #define TFT_BL 15
 #define BAT_PIN 4
 
+const char* FIRMWARE_VERSION = "0.9.0";
 
 TFT_eSPI tft = TFT_eSPI();
 uint16_t FB_BG = tft.color565(34, 38, 46);
@@ -2259,7 +2260,7 @@ void printTiltBLE(String curColor) {
                 newTempF   = tilt->tempF;
                 newGravity = tilt->gravity;
             }
-            
+
             curGravity = newGravity;
             plato = SGtoPlato(curGravity+TiltOffset);
             platoOG = SGtoPlato(og);
