@@ -1,5 +1,5 @@
 <p>
-  <img src="Images/fermbuddy_logo.png" alt="FermBuddy Logo" width="70" align="left">
+  <img src="Images/fermbuddy_logo.png" alt="FermBuddy Logo" width="240" align="left">
 </p>
 
 # FermBuddy
