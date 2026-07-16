@@ -2259,7 +2259,7 @@ void printTiltBLE(String curColor) {
                 newTempF   = tilt->tempF;
                 newGravity = tilt->gravity;
             }
-
+            
             curGravity = newGravity;
             plato = SGtoPlato(curGravity+TiltOffset);
             platoOG = SGtoPlato(og);
