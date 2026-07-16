@@ -1,6 +1,12 @@
 # FermBuddy
 **Track more than Gravity**
 
+
+<p align="center">
+  <img src="Images/fermbuddy_logo.png" width="170">
+</p>
+
+
 ![FermBuddy Hero](Images/fermbuddy.jpg)
 
 FermBuddy is an open-source display for hydrometers.
