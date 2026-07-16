@@ -1,8 +1,5 @@
-<p>
-  <img src="Images/fermbuddy_logo.png" alt="FermBuddy Logo" width="240" align="left">
-</p>
+![FermBuddy](Images/fermbuddy_logo.png)
 
-# FermBuddy
 **Track more than Gravity**
 
 <p align="left">
