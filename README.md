@@ -1,10 +1,10 @@
+<p>
+  <img src="Images/fermbuddy_logo.png" alt="FermBuddy Logo" width="70" align="left">
+</p>
+
 # FermBuddy
 **Track more than Gravity**
 
-
-<p align="left">
-  <img src="Images/fermbuddy_logo.png" width="240">
-</p>
 <p align="left">
   <img src="Images/fermbuddy.jpg" width="700">
 </p>
