@@ -1047,8 +1047,22 @@ void setupWebServer() {
                         0
                     );
 
+                    bool isHighResolution =
+                        (tiltBLE[i].tempF > 300 && tiltBLE[i].gravity > 9);
+                    
+                    float newTempF, newGravity;
+
+                    if (isHighResolution) {
+                        newTempF   = tiltBLE[i].tempF / 10.0f;
+                        newGravity = tiltBLE[i].gravity / 10.0f;
+                    }
+                    else {
+                        newTempF   = tiltBLE[i].tempF;
+                        newGravity = tiltBLE[i].gravity;
+                    }
+
                     float curGravity =
-                        tiltBLE[i].gravity +
+                        newGravity +
                         offset;
 
                     if(og > 0) {
@@ -1154,12 +1168,12 @@ void setupWebServer() {
                     if(config.tempUnit == TEMP_CELSIUS) {
                         temp =
                             fahrenheitToCelsius(
-                                tiltBLE[i].tempF
+                                newTempF
                             );
                     }
                     else {
                         temp =
-                            tiltBLE[i].tempF;
+                            newTempF;
                     }
 
                     dst["temp"] =
@@ -2230,10 +2244,23 @@ void printTiltBLE(String curColor) {
                 curColor.c_str(),
                 -1.0
             );
-            float plato, platoOG, curGravity, displaySG = 0;
+            float plato, platoOG, curGravity, displaySG, newTempF, newGravity = 0;
             int fermround = 0;
             String fermUnit, tempUnit = "";
-            curGravity = tilt->gravity;
+            // the difference between tilt2 and pro / pro mini is factor 10 - so if there is a high resolution packet we have to divide by 10
+            bool isHighResolution =
+                (tilt->tempF > 300 && tilt->gravity > 9);
+
+            if (isHighResolution) {
+                newTempF   = tilt->tempF / 10.0f;
+                newGravity = tilt->gravity / 10.0f;
+            }
+            else {
+                newTempF   = tilt->tempF;
+                newGravity = tilt->gravity;
+            }
+
+            curGravity = newGravity;
             plato = SGtoPlato(curGravity+TiltOffset);
             platoOG = SGtoPlato(og);
           
@@ -2250,11 +2277,11 @@ void printTiltBLE(String curColor) {
             }
             float temp = 0;
             if(config.tempUnit == TEMP_CELSIUS) {
-              temp = fahrenheitToCelsius(tilt->tempF);
+              temp = fahrenheitToCelsius(newTempF);
               tempUnit = " C";
             }
             else {
-              temp = tilt->tempF;
+              temp = newTempF;
               tempUnit = " F";
             }
 
