@@ -1,6 +1,6 @@
 ![FermBuddy](Images/fermbuddy_logo.png)
 
-**Track more than Gravity**
+## Overview
 
 <p align="left">
   <img src="Images/fermbuddy.jpg" width="700">
