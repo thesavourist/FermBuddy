@@ -2,10 +2,10 @@
 **Track more than Gravity**
 
 
-<p align="center">
+<p align="left">
   <img src="Images/fermbuddy_logo.png" width="240">
 </p>
-<p align="center">
+<p align="left">
   <img src="Images/fermbuddy.jpg" width="700">
 </p>
 
