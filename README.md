@@ -3,11 +3,11 @@
 
 
 <p align="center">
-  <img src="Images/fermbuddy_logo.png" width="170">
+  <img src="Images/fermbuddy_logo.png" width="240">
 </p>
-
-
-![FermBuddy Hero](Images/fermbuddy.jpg)
+<p align="center">
+  <img src="Images/fermbuddy.jpg" width="700">
+</p>
 
 FermBuddy is an open-source display for hydrometers.
 It connects directly to fermentation monitoring devices and displays gravity, temperature, estimated attenuation and estimated ABV at a glance.
